@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Клавишные инструменты - Музыкальный шоу-рум{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Клавишные инструменты</h1>
+    <a href="{{ url_for('index') }}" class="back-link">← На главную</a>
+</header>
+
+<section class="product-detail">
+    <div class="product-gallery">
+        <!-- Основное изображение будет добавляться через JS -->
+    </div>
+
+    <div class="product-info">
+        <h2>Ассортимент клавишных</h2>
+        <ul>
+        <div class="thumbnails">
+            <li>Рояль<div class="forbig"> <img src="{{ url_for('static', filename='image/keyboards/grand_piano.jpg') }}" alt="Рояль"> </div></li>
+            <li>Пианино<div class="forbig"> <img src="{{ url_for('static', filename='image/keyboards/upright_piano.jpg') }}" alt="Пианино"> </div></li>
+            <li>Цифровое пианино <div class="fordlinnoe"> <img src="{{ url_for('static', filename='image/keyboards/digital_piano.jpg') }}" alt="Цифровое пианино"> </div></li>
+            <li>Синтезатор <div class="fordlinnoe" > <img  src="{{  url_for('static', filename='image/keyboards/synthesizer.jpg') }}" alt="Синтезатор"> </div></li>
+            <li>MIDI-контроллер<div class="fordlinnoe"> <img src="{{ url_for('static', filename='image/keyboards/midi_controller.jpg') }}" alt="MIDI-контроллер"> </div></li>
+        </div>
+        </ul>
+
+        <h3>Аксессуары для клавишных:</h3>
+        <ul>
+            <li>Стойки и держатели для клавишных</li>
+            <li>Педали сустейна и экспрессии</li>
+            <li>Чехлы и кейсы для клавишных</li>
+            <li>Специализированные стулья и банкетки</li>
+            <li>MIDI-кабели и интерфейсы</li>
+            <li>Наушники для занятий</li>
+            <li>Метрономы</li>
+            <li>Нотные пюпитры</li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

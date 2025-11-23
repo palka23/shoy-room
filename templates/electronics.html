@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Электроника - Музыкальный шоу-рум{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Электроника для музыки</h1>
+    <a href="{{ url_for('index') }}" class="back-link">← На главную</a>
+</header>
+
+<section class="product-detail">
+    <div class="product-gallery">
+        <!-- Основное изображение будет добавляться через JS -->
+    </div>
+
+    <div class="product-info">
+        <h2>Ассортимент электроники</h2>
+        <ul>
+        <div class="thumbnails">
+            <li>Гитарный комбик<div class="forbig"> <img src="{{ url_for('static', filename='image/electronics/combic.jpg') }}" alt="Гитарный комбик"> </div></li>
+            <li>Гитарный процессор<div class="fordlinnoe"> <img src="{{ url_for('static', filename='image/electronics/procher.jpg') }}" alt="Гитарный процессор"> </div></li>
+            <li>Аудиоинтерфейс<div class="fordlinnoes"> <img src="{{ url_for('static', filename='image/electronics/audio.jpg') }}" alt="Аудиоинтерфейс"> </div></li>
+            <li>Микшерный пульт<div class="forbig"> <img src="{{ url_for('static', filename='image/electronics/micher.jpg') }}" alt="Микшерный пульт"> </div></li>
+            <li>Студийные мониторы<div class="fordlinnoe"> <img src="{{ url_for('static', filename='image/electronics/monitor.jpg') }}" alt="Студийные мониторы"> </div></li>
+        </div>
+        </ul>
+
+        <h3>Аксессуары для электроники:</h3>
+        <ul>
+            <li>Кабели и патч-корды</li>
+            <li>Блоки питания и адаптеры</li>
+            <li>Педали эффектов</li>
+            <li>Стойки и держатели для оборудования</li>
+            <li>Чехлы и сумки для аппаратуры</li>
+            <li>Стабилизаторы напряжения</li>
+            <li>Кабельные органайзеры</li>
+            <li>Инструменты для обслуживания</li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

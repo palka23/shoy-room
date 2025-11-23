@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header>
+    <h1>В Минеральных водах открылся музыкальный шоу-рум</h1>
+    <div class="quote">"Наша цель - сделать мир музыкальнее"</div>
+    <div class="description">
+        Музыкальный шоурум в городе Минеральные Воды на улице Карла Маркса 62. 
+        Музыкальные инструменты, оборудование, принадлежности.
+    </div>
+</header>
+
+<section class="location">
+    <div class="address">Город Минеральные Воды, улица Карла Маркса 62</div>
+    <a href="https://go.2gis.com/RxwJ5" class="map-link" target="_blank">Посмотреть на карте</a>
+</section>
+<header>
+<div <h2 class="product-title">у нас в ассортименте</h2></div> </header>
+<section class="products">
+    <div class="product-category">
+        <a href="{{ url_for('guitars') }}" class="product-link">Гитары</a>
+        <div class="sub-items">(медиаторы, ремни, струны, тюнеры)</div>
+    </div>
+    
+    <div class="product-category">
+        <a href="{{ url_for('keyboards') }}" class="product-link">Клавишные</a>
+        <div class="sub-items">(пианино, фортепиано, стулья)</div>
+    </div>
+    
+    <div class="product-category">
+        <a href="{{ url_for('drums') }}" class="product-link">Барабаны</a>
+        <div class="sub-items">(палочки, болты для барабанов,барабанный ключ )</div>
+    </div>
+    
+    <div class="product-category">
+        <a href="{{ url_for('electronics') }}" class="product-link">Электроника</a>
+        <div class="sub-items">(педальки, микрофоны, радиосистемы, комбо усилители)</div>
+    </div>
+</section>
+
+<section class="contact-info">
+    <h2 class="contact-title">Способ связи</h2>
+    <div class="phone">+7 919 732-42-62 (WhatsApp, Telegram)</div>
+    <div class="telegram">Телеграм консультант:<a></a> @fush_justplay</div>
+    
+    <div class="cooperation">
+        <p>По сотрудничеству обращаться к:</p>
+        <div class="phone">+7 919 732-42-62</div>
+    </div>
+     <div class="cooperation">
+        <div> <a href="https://t.me/justplayminvodi">Наш телеграмм </a> </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Музыкальный шоу-рум в Минеральных Водах</p>
+</footer>
+{% endblock %}

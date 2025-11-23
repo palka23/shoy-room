@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Барабаны - Музыкальный шоу-рум{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Барабанные установки и перкуссия</h1>
+    <a href="{{ url_for('index') }}" class="back-link">← На главную</a>
+</header>
+
+<section class="product-detail">
+    <div class="product-gallery">
+        <!-- Основное изображение будет добавляться через JS -->
+    </div>
+
+    <div class="product-info">
+        <h2>Ассортимент барабанов</h2>
+        <ul>
+        <div class="thumbnails">
+            <li>Акустическая барабанная установка<div class="forbig"> <img src="{{ url_for('static', filename='image/drums/acoustic_drum_set.jpg') }}" alt="Акустическая барабанная установка"> </div></li>
+            <li>Электронная барабанная установка<div class="forbig"> <img src="{{ url_for('static', filename='image/drums/electronic_drum_set.jpg') }}" alt="Электронная барабанная установка"> </div></li>
+            <li>Кахон<div class="fordlinnoe"> <img src="{{ url_for('static', filename='image/drums/cajon.jpg') }}" alt="Кахон"> </div></li>
+            <li>Комплект тарелок<div class="fordlinnoess"> <img src="{{ url_for('static', filename='image/drums/cymbals_set.jpg') }}" alt="Комплект тарелок             "> </div></li>
+            <li>Конги<div class="forbig"> <img src="{{ url_for('static', filename='image/drums/congas.jpg') }}" alt="Конги"> </div></li>
+        </div>
+        </ul>
+
+        <h3>Аксессуары для барабанов:</h3>
+        <ul>
+            <li>Барабанные палочки различных размеров</li>
+            <li>Педали для бас-барабана</li>
+            <li>Стойки и держатели</li>
+            <li>Барабанные пластики</li>
+            <li>Чехлы и кейсы для перевозки</li>
+            <li>Тюнеры для барабанов</li>
+            <li>Демпфирующие прокладки</li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

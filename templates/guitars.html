@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Гитары - Музыкальный шоу-рум{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Гитары и аксессуары</h1>
+    <a href="{{ url_for('index') }}" class="back-link">← На главную</a>
+</header>
+
+<section class="product-detail">
+    <div class="product-gallery">
+
+    </div>
+
+    <div class="product-info">
+        <h2>Ассортимент гитар</h2>
+        <ul>
+        <div   class="thumbnails">
+            <li>Акустические гитары <div class="thumbnails">
+            <img src="{{ url_for('static', filename='/image/gitar/akustica.jpeg') }}" alt="Акустическая гитара"> </div></li>
+            <li>Электрогитары<div class="thumbnails">
+            <img src="{{ url_for('static', filename='image/gitar/electrogitar.jpg') }}" alt="Электрогитара">   </div></li>
+            <li>Бас-гитары<div class="thumbnails">
+            <img src="{{ url_for('static', filename='image/gitar/bass.jpg') }}" alt="Бас-гитара">   </div></li>
+            <li>Классические гитары<div class="thumbnails">
+            <img src="{{ url_for('static', filename='image/gitar/classic.jpg') }}" alt="Бас-гитара">   </div></li>
+            <li>Укулеле<div class="thumbnails">
+            <img src="{{ url_for('static', filename='image/gitar/uculele.jpg') }}" alt="укулелел">
+        </div></li>  </div>
+        </ul>
+
+        <h3>Аксессуары:</h3>
+        <ul>
+            <li>Медиаторы</li>
+            <li>Ремни</li>
+            <li>Струны</li>
+            <li>Тюнеры</li>
+            <li>Чехлы и кейсы</li>
+        </ul>
+    </div>
+</section>
+{% endblock %}
